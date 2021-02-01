@@ -1,0 +1,1 @@
+this .vscode folder is only needed when developing on VS Code. delete otherwise.
