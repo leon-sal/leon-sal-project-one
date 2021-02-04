@@ -1,0 +1,51 @@
+// Colors
+$light-blue: #86E0F9;
+$spruce: #0F614E;  
+$dark-blue: #0C1423;
+
+// Fonts
+$barlow: 'Barlow', sans-serif;
+$lato: 'Lato', sans-serif;
+
+html {
+    font-size: 62.5%;
+}
+
+@mixin header {
+    font: bold 13.8rem $barlow;
+    line-height: 126px; 
+}
+
+@mixin heading2 {
+    font: bold 8rem $barlow;
+    line-height: 92px; 
+}
+
+@mixin heading3 {
+    font: bold 4.2rem $barlow;
+    letter-spacing: 1px; 
+}
+
+@mixin heading4 {
+    font: bold 3.2rem $barlow;
+    letter-spacing: 1px; 
+}
+
+@mixin navigation {
+    font: bold 2rem $barlow;
+    line-height: 29px;
+    letter-spacing: 1px; 
+    text-align: center;
+}
+
+@mixin button {
+    font: bold 2rem $barlow;
+    line-height: 32px;
+    letter-spacing: 1px; 
+    text-align: center;
+}
+
+@mixin body {
+    font: 2rem $lato;
+    line-height: 32px; 
+}
