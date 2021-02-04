@@ -290,7 +290,7 @@ a {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1500px;
   width: 90%;
   margin: 0 auto;
 }
@@ -309,6 +309,7 @@ nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 20px;
 }
 
 nav ul {
@@ -318,7 +319,6 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
 }
 
 nav a {
@@ -326,4 +326,15 @@ nav a {
   line-height: 29px;
   letter-spacing: 1px;
   text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+nav a:hover {
+  color: #86E0F9;
+}
+
+* {
+  -webkit-transition: 500ms all;
+  transition: 500ms all;
 }

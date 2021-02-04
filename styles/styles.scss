@@ -1,3 +1,7 @@
 @import './partials/reset';
 @import './partials/typography';
 @import './partials/header';
+
+* {
+    transition: 500ms all;
+}
