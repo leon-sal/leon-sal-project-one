@@ -1,0 +1,31 @@
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+
+    //../assets/header-image.jpg
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url(../assets/header-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+
+    width: 50%;
+}
+
+nav a {
+    @include navigation;
+}

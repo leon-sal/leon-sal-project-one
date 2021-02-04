@@ -11,6 +11,22 @@ html {
     font-size: 62.5%;
 }
 
+:not(p) {
+    text-transform: uppercase;
+}
+
+:not(.find-more) {
+    color: white;
+}
+
+//remove list and link styles
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
 @mixin header {
     font: bold 13.8rem $barlow;
     line-height: 126px; 
