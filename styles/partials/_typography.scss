@@ -11,6 +11,7 @@ html {
     font-size: 62.5%;
 }
 
+// very interesting; applies "uppercase" even to p
 :not(p) {
     text-transform: uppercase;
 }
@@ -63,5 +64,6 @@ nav a {
 
 p {
     font: 2rem $lato;
-    line-height: 32px; 
+    line-height: 32px;
+    text-transform: none;
 }
