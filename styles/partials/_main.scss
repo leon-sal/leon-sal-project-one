@@ -1,79 +1,75 @@
 body {
-    background: $dark-blue;
+  background: $dark-blue;
 }
 
 main {
-    padding-top: 50px;
-}
+  padding-top: 50px;
 
-.find-more {
+  .find-more {
     background: $light-blue;
     color: $dark-blue;
     padding: 10px 30px;
     margin-top: 20px;
-}
+  }
 
-main .section2,
-main .gallery {
+  .section2,
+  .gallery {
     background: $spruce;
-}
+  }
 
-main .section1 {
+  .section1 {
     padding: 200px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-main .section1 p {
-    width: 70%;
-    margin: 0;
-}
+    p {
+      width: 70%;
+      margin: 0;
+    }
+  }
 
-
-main .additions,
-main .meet-nemo {
+  .additions,
+  .meet-nemo {
     display: flex;
     position: relative;
     height: 481px;
-}
+  }
 
-main .additions {
-    justify-content: flex-end;
-}
-
-main .additions > *,
-main .meet-nemo > * {
+  .additions > *,
+  .meet-nemo > * {
     width: 40%;
-}
+  }
 
-main .additions {
+  .additions {
+    justify-content: flex-end;
 
     .img-container {
-        box-shadow: 40px 40px $light-blue;
-        position: absolute;
-        height: min-content;
-        top: -40px;
-        left: -40px;
-    }
-    img {
+      box-shadow: 40px 40px $light-blue;
+      background: $light-blue;
+      position: absolute;
+      height: min-content;
+      top: -40px;
+      left: -40px;
+
+      img {
         width: 100%;
+      }
     }
+  }
+
+  .meet-nemo {
+    .img-container {
+      box-shadow: -40px 40px $light-blue;
+      position: absolute;
+      height: min-content;
+      bottom: -40px;
+      right: 0;
+    }
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
 }
-
-
-main .meet-nemo .img-container {
-    box-shadow: -40px 40px $light-blue;
-    position: absolute;
-    height: min-content;
-    bottom: -40px;
-    right: 0;
-}
-
-main .meet-nemo article {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-main .meet-nemo
