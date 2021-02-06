@@ -29,3 +29,21 @@ main .section1 p {
     width: 70%;
     margin: 0;
 }
+
+
+main .additions,
+main .meet-nemo {
+    display: flex;
+}
+
+main .additions > *,
+main .meet-nemo > * {
+    width: 40%;
+}
+
+main .additions .img-container {
+    box-shadow: 40px 40px $light-blue;
+    position: relative;
+    top: -50px;
+    left: -50px;
+}
