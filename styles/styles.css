@@ -265,7 +265,7 @@ html {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 75%;
 }
 
 :not(p) {
@@ -286,12 +286,12 @@ a {
 
 h1 {
   font: bold 13.8rem "Barlow", sans-serif;
-  line-height: 126px;
+  line-height: 158px;
 }
 
 h1.blog {
   font: bold 8rem "Barlow", sans-serif;
-  line-height: 92px;
+  line-height: 115px;
 }
 
 h2 {
@@ -306,21 +306,21 @@ h3 {
 
 nav a {
   font: bold 2rem "Barlow", sans-serif;
-  line-height: 29px;
+  line-height: 36px;
   letter-spacing: 1px;
   text-align: center;
 }
 
 .button {
   font: bold 2rem "Barlow", sans-serif;
-  line-height: 32px;
+  line-height: 40px;
   letter-spacing: 1px;
   text-align: center;
 }
 
 p {
   font: 2rem "Lato", sans-serif;
-  line-height: 32px;
+  line-height: 40px;
   text-transform: none;
 }
 
@@ -409,7 +409,12 @@ main .meet-nemo {
 }
 main .additions > *,
 main .meet-nemo > * {
-  width: 40%;
+  width: 44%;
+}
+main .additions .img-container,
+main .meet-nemo .img-container {
+  position: absolute;
+  height: min-content;
 }
 main .additions {
   justify-content: flex-end;
@@ -417,18 +422,11 @@ main .additions {
 main .additions .img-container {
   box-shadow: 40px 40px #86E0F9;
   background: #86E0F9;
-  position: absolute;
-  height: min-content;
   top: -40px;
   left: -40px;
 }
-main .additions .img-container img {
-  width: 100%;
-}
 main .meet-nemo .img-container {
   box-shadow: -40px 40px #86E0F9;
-  position: absolute;
-  height: min-content;
   bottom: -40px;
   right: 0;
 }

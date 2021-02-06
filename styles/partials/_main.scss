@@ -34,11 +34,19 @@ main {
     display: flex;
     position: relative;
     height: 481px;
-  }
 
-  .additions > *,
-  .meet-nemo > * {
-    width: 40%;
+    & > * {
+      width: 44%;
+    }
+
+    .img-container {
+      position: absolute;
+      height: min-content;
+
+    //img {
+    //  width: 100%;
+    //}
+    }
   }
 
   .additions {
@@ -47,22 +55,14 @@ main {
     .img-container {
       box-shadow: 40px 40px $light-blue;
       background: $light-blue;
-      position: absolute;
-      height: min-content;
       top: -40px;
       left: -40px;
-
-      img {
-        width: 100%;
-      }
     }
   }
 
   .meet-nemo {
     .img-container {
       box-shadow: -40px 40px $light-blue;
-      position: absolute;
-      height: min-content;
       bottom: -40px;
       right: 0;
     }
