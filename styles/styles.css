@@ -289,6 +289,45 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font: bold 13.8rem "Barlow", sans-serif;
+  line-height: 126px;
+}
+
+h1.blog {
+  font: bold 8rem "Barlow", sans-serif;
+  line-height: 92px;
+}
+
+h2 {
+  font: bold 4.2rem "Barlow", sans-serif;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font: bold 3.2rem "Barlow", sans-serif;
+  letter-spacing: 1px;
+}
+
+nav a {
+  font: bold 2rem "Barlow", sans-serif;
+  line-height: 29px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.button {
+  font: bold 2rem "Barlow", sans-serif;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+p {
+  font: 2rem "Lato", sans-serif;
+  line-height: 32px;
+}
+
 .wrapper {
   max-width: 1500px;
   width: 90%;
@@ -322,16 +361,43 @@ nav ul {
 }
 
 nav a {
-  font: bold 2rem "Barlow", sans-serif;
-  line-height: 29px;
-  letter-spacing: 1px;
-  text-align: center;
   padding: 20px;
   margin: 10px;
 }
 
 nav a:hover {
   color: #86E0F9;
+}
+
+header {
+  position: relative;
+  padding-bottom: 115px;
+}
+
+header .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 115px;
+}
+
+header h1 {
+  margin-top: 0;
+  width: 25%;
+}
+
+header .img-container {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 205px;
+}
+
+.img-container img {
+  width: 100%;
 }
 
 * {

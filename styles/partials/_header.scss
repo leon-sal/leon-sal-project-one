@@ -26,10 +26,37 @@ nav ul {
 }
 
 nav a {
-    @include navigation;
+    
     padding: 20px;
     margin: 10px;
 }
 nav a:hover {
     color: $light-blue;
+}
+
+header {
+    position: relative;
+    padding-bottom: 115px;
+}
+
+header .flex-container{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 115px;
+}
+
+header h1 {
+    margin-top: 0;
+    width: 25%;
+}
+
+header .img-container {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 205px;
+}
+
+.img-container img {
+    width: 100%;
 }
