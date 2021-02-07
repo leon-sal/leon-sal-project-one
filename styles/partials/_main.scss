@@ -109,23 +109,41 @@ main {
 
     section.links {
 
-        i {
-            color: $dark-blue;
-            background: $light-blue;
+        padding: 100px 0;
 
-            display: inline-block;
+        .wrapper {
+            padding-top: 100px;
+            display: grid;
+            grid-template-columns: 1fr 10fr 1fr 10fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 50px 5px;
 
-            font-size: 3.2rem;
+        
+            i {
+                color: $dark-blue;
+                background: $light-blue;
 
-            height: 48px;
-            border-radius: 50%;
+                display: inline-block;
 
-            padding-top: 5px;
+                font-size: 2.5rem;
+
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+
+                padding-top: 5px;
+
+                &::before {
+                    position: relative;
+                    top: 20%;
+                }
+            }
+            
+            h3 {
+                margin: 0;
+            }
+
+            
         }
-
-        display: grid;
-
-        grid-template-columns: 48px 500px 48px 500px;
-        grid-template-rows: 300px 300px;
     }
 }
