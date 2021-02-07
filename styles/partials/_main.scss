@@ -106,4 +106,26 @@ main {
 
         
     }
+
+    section.links {
+
+        i {
+            color: $dark-blue;
+            background: $light-blue;
+
+            display: inline-block;
+
+            font-size: 3.2rem;
+
+            height: 48px;
+            border-radius: 50%;
+
+            padding-top: 5px;
+        }
+
+        display: grid;
+
+        grid-template-columns: 48px 500px 48px 500px;
+        grid-template-rows: 300px 300px;
+    }
 }
