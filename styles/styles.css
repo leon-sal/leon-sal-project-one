@@ -335,12 +335,6 @@ p {
   margin: 0 auto;
 }
 
-.wrapper-image {
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .img-container img {
   width: 100%;
 }
@@ -454,7 +448,9 @@ main .section2 > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 481px;
 }
 
@@ -463,16 +459,10 @@ main .section2 > * > * {
 }
 
 main .section2 .img-container {
-  position: absolute;
+  position: relative;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-}
-
-main .section2 .additions {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 main .section2 .additions .img-container {
@@ -483,14 +473,32 @@ main .section2 .additions .img-container {
   left: -40px;
 }
 
+main .section2 .additions article {
+  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 main .section2 .additions p {
-  width: 80%;
+  margin-right: 11%;
+}
+
+main .section2 .meet-nemo {
+  margin-top: 100px;
 }
 
 main .section2 .meet-nemo .img-container {
   -webkit-box-shadow: -40px 40px #86E0F9;
           box-shadow: -40px 40px #86E0F9;
-  bottom: -40px;
+  bottom: -10px;
   right: 0;
 }
 
@@ -509,11 +517,7 @@ main .section2 .meet-nemo article {
 
 main .section2 .meet-nemo article p {
   text-align: right;
-  width: 80%;
-}
-
-main .section2 article {
-  padding-top: 50px;
+  margin-left: 11%;
 }
 
 * {
