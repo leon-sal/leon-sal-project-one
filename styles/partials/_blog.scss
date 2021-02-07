@@ -1,0 +1,24 @@
+body.blog {
+    background-image: url(../assets/blog-header.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.blog {
+
+    main {
+        display: flex;
+        justify-content: space-between;
+
+        
+        aside {
+
+            width: 27%;
+            margin-top: 700px;
+        }
+
+        & > section {
+            width: 63%;
+        }
+    }
+}

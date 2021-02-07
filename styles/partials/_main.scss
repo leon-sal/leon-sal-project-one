@@ -187,12 +187,9 @@ main {
     }
 }
 
-footer {
+p.juno {
+    margin: 0;
+    color: $dark-blue;
+    text-align: center;
     background-color: $light-blue;
-
-    .juno {
-        margin: 0;
-        color: $dark-blue;
-        text-align: center;
-    }
 }
