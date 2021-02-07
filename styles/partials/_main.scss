@@ -24,8 +24,6 @@ main {
     background: $spruce;
   }
 
-  
-
   .section1 {
     padding: 200px 0;
     display: flex;
@@ -40,7 +38,7 @@ main {
 
   .section2 {
 
-         & > * {
+        & > * {
             display: flex;
             // position: relative;
             justify-content: space-between;
@@ -62,10 +60,12 @@ main {
         .additions {
 
             .img-container {
-                box-shadow: 40px 40px $light-blue;
-                background: $light-blue;
                 top: -40px;
                 left: -40px;
+
+                img {
+                    box-shadow: 40px 40px $light-blue;
+                }
             }
 
             article {
@@ -76,7 +76,7 @@ main {
             }
 
             p{
-                margin-right: 11%;
+                margin-right: 20%;
             }
 
             //Check line-height issue in helpcue
@@ -87,9 +87,12 @@ main {
             margin-top: 100px;
 
             .img-container {
-                box-shadow: -40px 40px $light-blue;
-                bottom: -10px;
+                bottom: -30px;
                 right: 0;
+
+                img {
+                    box-shadow: -40px 40px $light-blue;
+                }
             }
             article {
                 display: flex;
@@ -98,7 +101,7 @@ main {
 
                 p{
                     text-align: right;
-                    margin-left: 11%;
+                    margin-left: 20%;
                     
                 }
             }
@@ -116,7 +119,7 @@ main {
             display: grid;
             grid-template-columns: 1fr 10fr 1fr 10fr;
             grid-template-rows: 1fr 1fr;
-            gap: 50px 5px;
+            gap: 50px 15px;
 
         
             i {
@@ -138,12 +141,58 @@ main {
                     top: 20%;
                 }
             }
-            
+
             h3 {
                 margin: 0;
             }
 
             
         }
+    }
+
+    .monthly {
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .img-container {
+            width: 27%;
+            
+            img {
+                box-shadow: 40px 40px $light-blue;
+            }
+        }
+
+        article {
+            width: 63%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+
+    .gallery {
+        padding: 100px 0;
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+    }
+}
+
+footer {
+    background-color: $light-blue;
+
+    .juno {
+        margin: 0;
+        color: $dark-blue;
+        text-align: center;
     }
 }
