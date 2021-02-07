@@ -2,23 +2,57 @@ body.blog {
     background-image: url(../assets/blog-header.jpg);
     background-repeat: no-repeat;
     background-size:contain;
-}
-
-.blog {
+    position: relative;
+    overflow-x: hidden;
 
     main {
         display: flex;
         justify-content: space-between;
+        margin-top: 100px;
 
         
         aside {
 
             width: 27%;
-            margin-top: 700px;
+            margin-top: 550px;
         }
 
         & > section {
             width: 63%;
+        }
+
+        section {
+
+            h1.blog {
+                margin: 0;
+                padding-left: 30px;
+            }
+
+            .blog-content {
+                box-shadow: -10px 10px $light-blue;
+                padding-left: 30px;
+                padding-bottom: 30px;
+                position: relative;
+                top: 30px;
+            }
+
+            .img-hero {
+
+                img {
+                    box-shadow: -40px 40px $light-blue;
+                    width: 60vw;
+                    position: relative;
+                    top: -30px;
+                    margin-right: -60vw;
+                }
+            }
+
+            article {
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
         }
     }
 }
