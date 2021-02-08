@@ -13,8 +13,32 @@ body.blog {
         
         aside {
 
-            width: 27%;
-            margin-top: 550px;
+            width: 30%;
+            height: max-content;
+            margin-top: 615px;
+            padding: 0 40px;
+            padding-bottom: 20px;
+
+            background: $spruce;
+
+            .img-container {
+
+                img {
+                
+                    width: 31vw;
+                    margin-left: -13vw;
+                    position: relative;
+                    top: -20px;
+                }
+            }
+
+            ul {
+                padding-left: 3rem;
+                
+                li::marker {
+                    margin-right: 100px;
+                }
+            }
         }
 
         & > section {
@@ -48,11 +72,75 @@ body.blog {
             }
 
             article {
+                padding-left: 20px;
+
                 p {
                     margin-bottom: 0;
                 }
             }
 
+            section.comments {
+
+                margin-top: 100px;
+                padding-left: 30px;
+
+                .comment {
+                    margin-bottom: 100px;
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    .img-container {
+                        width: 10%;
+                        padding-top: 10px;
+                    }
+                    .text {
+                        width: 85%;
+                        
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            form {
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 100px 200px 50px;
+                gap: 50px;
+
+
+                * {
+                    border: none;
+                    outline: none;
+                }
+
+                .name, .email {
+                    background: $dark-blue;
+                    border-bottom: solid 2px $light-blue;
+                }
+                .comment {
+                    background: $dark-blue;
+                    border: solid 2px $light-blue;
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+
+                    padding: 10px;
+                }
+                button {
+                    background: $spruce;
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    
+                    height: 50px;
+                }
+            }
         }
+    }
+
+    p.juno {
+        margin-top: 100px;
     }
 }

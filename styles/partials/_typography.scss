@@ -49,6 +49,10 @@ h3 {
     letter-spacing: 1px; 
 }
 
+h4 {
+    font: bold 2.6rem $barlow;
+}
+
 nav a {
     font: bold 2rem $barlow;
     line-height: 36px;
@@ -56,15 +60,30 @@ nav a {
     text-align: center;
 }
 
-.button {
+.button, button {
     font: bold 2rem $barlow;
     line-height: 40px;
     letter-spacing: 1px; 
     text-align: center;
 }
 
-p {
+p, 
+*[placeholder] {
     font: 2rem $lato;
     line-height: 40px;
     text-transform: none;
+}
+
+body.blog aside ul {
+    list-style: outside;
+    
+    li {
+        font: 2rem $lato;
+        line-height: 40px;
+        text-transform: none;
+
+        &::marker {
+            font-size: 1rem;
+        }
+    }
 }
