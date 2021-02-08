@@ -103,44 +103,44 @@ body.blog {
                     }
                 }
             }
-
-            form {
-
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 100px 200px 50px;
-                gap: 50px;
-
-
-                * {
-                    border: none;
-                    outline: none;
-                }
-
-                .name, .email {
-                    background: $dark-blue;
-                    border-bottom: solid 2px $light-blue;
-                }
-                .comment {
-                    background: $dark-blue;
-                    border: solid 2px $light-blue;
-                    grid-column-start: 1;
-                    grid-column-end: 3;
-
-                    padding: 10px;
-                }
-                button {
-                    background: $spruce;
-                    grid-column-start: 1;
-                    grid-column-end: 3;
-                    
-                    height: 50px;
-                }
-            }
         }
     }
 
     p.juno {
         margin-top: 100px;
+    }
+}
+
+form {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 200px 50px;
+    gap: 50px;
+
+
+    * {
+        border: none;
+        outline: none;
+    }
+
+    .name, .email {
+        background: $dark-blue;
+        border-bottom: solid 2px $light-blue;
+    }
+    .comment {
+        background: $dark-blue;
+        border: solid 2px $light-blue;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        padding: 10px;
+    }
+    button {
+        background: $spruce;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        
+        height: 50px;
     }
 }
