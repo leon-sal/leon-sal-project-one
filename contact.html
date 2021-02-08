@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- necolas's normalize.css (https://github.com/necolas/normalize.css/)  plus basic setup like .clearfix, .sr-only, and box-sizing: border-box -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!-- font awesome JS link -->
+    <script
+      src="https://kit.fontawesome.com/fd6e98527a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Contact</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class=".contact">
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#blog">blog</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <h1>Get In Touch</h1>
+      <form action="submit">
+        <label for="name" class="sr-only"></label>
+        <input
+          type="text"
+          name="name"
+          class="name"
+          id="name"
+          placeholder="Name"
+        />
+        <label for="email" class="sr-only"></label>
+        <input
+          type="email"
+          name="email"
+          class="email"
+          id="email"
+          placeholder="Email address"
+        />
+        <label for="comment" class="sr-only"></label>
+        <textarea
+          name="comment"
+          class="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Comment"
+        >
+        </textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+      <section class="contact-info">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <h4>info@email.com</h4>
+        <ul>
+          <li>123 - 456 - 7890</li>
+          <li>123 Queen Street West, Unit 10</li>
+          <li>Toronto, Ontario</li>
+          <li>M5V2D5</li>
+        </ul>
+      </section>
+    </div>
+    <p class="juno">Copyright &#169; 2021 Juno</p>
+  </body>
+
 </html>
