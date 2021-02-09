@@ -1,0 +1,54 @@
+// responsive breakpoints
+
+// screen size 4" to 6.9"
+$mobile-min: 414px; 
+$mobile-max: 568px;
+
+// screen size 7" to 10"
+$tablet-min: 768px; 
+$tablet-max: 1024px;
+
+// full laptop/desktop displays
+$desktop-min: 1200px;
+
+// source: https://ricostacruz.com/til/css-media-query-breakpoints
+
+@media screen and (max-width: $tablet-max) {
+    h1 {
+        font-size: 10rem;
+        line-height: 100px;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    main .section2 {
+        
+        .additions {
+
+            height: unset;
+
+            article {
+                // margin: 0;
+
+                p {
+                    margin-right: 5%;
+                }
+            }
+        }
+        .meet-nemo {
+            margin-top: 50px;
+        }
+    }
+}
