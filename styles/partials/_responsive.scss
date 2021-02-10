@@ -13,6 +13,21 @@ $desktop-min: 1200px;
 
 // source: https://ricostacruz.com/til/css-media-query-breakpoints
 
+/* TODO
+
+breakpoints to add:
+    500px (header)
+    360px (header)
+    680px (links section)
+    900px (section2)
+
+make distance between .additions and .meet-nemo responsive
+make sure .meet-nemo image sticks to bottom of its section
+add min-width to images in section2
+replace whale banner's width setting with a min-width
+add min-width to gallery images
+*/ 
+
 @media screen and (max-width: $tablet-max) {
     h1 {
         font-size: 10rem;
@@ -53,78 +68,207 @@ $desktop-min: 1200px;
 
 @media screen and (max-width: $tablet-min) {
 
-
-    header .flex-container {
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    header .flex-container h1 {
-        width: 60%;
-        text-align: left;
-        z-index: 10;
-    }
-    
-    header .flex-container .img-container {
-        position: static;
-        width: 100%;
-    }
-    
     nav {
         justify-content: center;
-    }
-    
-    nav ul {
-        padding: 0;
-    }
-    
-    main .section1 {
-        padding: 100px 0;
-    }
-  
-    main .section2 .additions {
-      flex-direction: column;
-    }
-    main .section2 .meet-nemo {
-      margin-top: 150px;
-      flex-direction: column-reverse;
-    }
-    main .section2 .additions article p {
-      margin-right: 0;
+
+        ul {
+            padding: 0;
+        }
     }
 
     h3 {
-      margin-bottom: 0;
-    }
-  
-    main .section2 > * {
-        align-items: center;
-    }
-    
-    main .section2 article {
-        width: 70%;
+        margin-bottom: 0;
     }
 
-    main .section2 article {
-        width: 50%;
-        align-items: center;
+    header {
+
+        .flex-container {
+
+            align-items: center;
+            flex-direction: column;
+
+            h1 {
+                width: 60%;
+                text-align: left;
+                z-index: 10;
+            }
+
+            .img-container {
+                position: relative;
+                top: 0;
+                right: 8%;
+                width: 100%;
+            }
+        }
     }
 
-    main .section2 .img-container {
-        position: static;
+    main {
+        .section1 {
+            padding: 100px 0;
+        }
+
+        .section2 {
+
+            padding: 100px 0;
+
+            .img-container {
+                width: 50%;
+                position: static;
+            }
+
+            .additions,
+            .meet-nemo {
+
+                
+                align-items: center;
+                
+                article {
+
+                    width: 70%;
+                    align-items: center;
+    
+                    p {
+                        text-align: left;
+                        margin: 20px 0;
+                    }
+                }
+
+                .img-container img {
+                    box-shadow: 20px 20px $light-blue;
+                }
+            }
+
+            .additions {
+                flex-direction: column;
+            }
+
+            .meet-nemo {
+
+                margin-top: 100px;
+                flex-direction: column-reverse;
+            }
+        }
+        
+        .monthly {
+            flex-direction: column;
+
+            .img-container {
+                width: unset;
+
+                img {
+                    box-shadow: 25px 25px $light-blue;
+                }
+            }
+
+            article {
+                width: unset;
+                align-items: center;
+                margin-top: 50px
+            }
+        }
+
+        .gallery {
+            padding: 50px 0;
+
+            ul {
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                    width: 50%;
+                    margin: 5%;
+
+                }
+            }
+        }
     }
-    
-    main .section2  p {
-        text-align: left;
+}
+
+@media screen and (max-width: $mobile-max) {
+
+    main {
+        .section1 {
+            padding: 10px 0;
+
+            h2 {
+                text-align: center;
+            }
+            p {
+                width: 90%;
+                margin-bottom: 40px;
+            }
+
+            .find-more {
+                margin: 20px;
+            }
+        }
+
+        .section2 {
+
+            
+            .img-container {
+                width: 65%;
+            }
+        }
+
+        section.links .wrapper {
+
+            grid-template-columns: 1fr 10fr;
+        }
+
+        section.monthly h2 {
+            text-align: center;
+        }
     }
-    
-    
-    .section2 .meet-nemo img {
-        box-shadow: -20px 20px $light-blue;
+}
+
+@media screen and (max-width: $mobile-min) {
+
+    header {
+        nav ul a {
+
+            font-size: 1.5rem;
+            padding: 12px;
+        }
+
+        .flex-container h1 {
+            width: 100%;
+            font-size: 9rem;
+        }
     }
-    
-    .section2 .additions img {
-        box-shadow: 20px 20px $light-blue;
+
+    main {
+
+        .section2 {
+
+            padding: 50px 0;
+
+            .img-container {
+                width: 80%
+            }
+
+            .additions article,
+            .meet-nemo article {
+                width: 85%;
+            }
+        }
+
+        section.links {
+            padding: 0;
+
+            .wrapper {
+                padding: 100px 0;
+            }
+        }
+
+        .gallery ul li {
+            width: 75%;
+        }
+
     }
-    
+    .whale-banner {
+        width: 160%;
+        position: relative;
+        right: 32%;
+    }
 }
