@@ -75,6 +75,24 @@ add min-width to gallery images
             font-size: 1.5rem;
         }
     }
+
+    body.contact {
+
+        main {
+            flex-direction: column;
+            padding-bottom: 50px;
+            align-items: center;
+
+            .get-in-touch {
+                width: 100%;
+                margin-bottom: 100px;
+            }
+
+            section.contact-info {
+                align-self: flex-start;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: $tablet-min) {
@@ -204,6 +222,21 @@ add min-width to gallery images
             }
             aside {
                 width: 75%;
+            }
+        }
+    }
+
+    body.contact {
+
+        main form {
+
+            grid-template-columns: 80%;
+            grid-template-rows: 100px 100px 200px 50px;
+            gap: 30px;
+            box-shadow: none;
+
+            .name, .email {
+                grid-column: 1 / 3;
             }
         }
     }
@@ -345,6 +378,33 @@ add min-width to gallery images
             }
         }
     }
+
+    body.contact {
+        nav ul a {
+            padding: 0;
+            font-size: 1.8rem;
+        }
+
+        main { 
+            .get-in-touch {
+                margin-bottom: 50px;
+
+                h1.blog {
+                    font-size: 6rem;
+                    line-height: 80px;
+                    margin-top: 0;
+                }
+            }
+
+            form {
+                grid-template-columns: 100%;
+                padding: 20px;
+                .name, .email, & > * {
+                    grid-column: 1 / 2;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: $mobile-min) {
@@ -406,5 +466,11 @@ add min-width to gallery images
             }
         }
     
+    }
+
+    body.contact {
+        .wrapper {
+            overflow-x: visible;
+        }
     }
 }
