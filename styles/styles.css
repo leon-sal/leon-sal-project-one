@@ -341,37 +341,6 @@ body.blog aside ul li::marker {
   font-size: 1rem;
 }
 
-body, body > * {
-  overflow-x: hidden;
-}
-
-.wrapper {
-  max-width: 1500px;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.img-container img {
-  width: 100%;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 20px;
-}
-nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-nav ul a {
-  padding: 20px;
-  margin: 10px;
-}
-nav ul a:hover {
-  color: #86E0F9;
-}
-
 header {
   height: 100vh;
   overflow-y: hidden;
@@ -708,20 +677,6 @@ body.contact main section.contact-info ul li {
   text-transform: none;
 }
 
-/* TODO
-
-breakpoints to add:
-    500px (header)
-    360px (header)
-    680px (links section)
-    900px (section2)
-
-make distance between .additions and .meet-nemo responsive
-make sure .meet-nemo image sticks to bottom of its section
-add min-width to images in section2
-replace whale banner's width setting with a min-width
-add min-width to gallery images
-*/
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: 10rem;
@@ -1042,4 +997,35 @@ main .section2 .meet-nemo article {
 }
 * {
   transition: 250ms all;
+}
+
+body, body > * {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul a {
+  padding: 20px;
+  margin: 10px;
+}
+nav ul a:hover {
+  color: #86E0F9;
 }
