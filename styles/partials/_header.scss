@@ -1,7 +1,9 @@
 // document-wide styles
-body {
+body, body > * {
     overflow-x: hidden;
 }
+
+
 
 .wrapper {
     max-width: 1500px;
