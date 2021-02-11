@@ -373,6 +373,8 @@ nav ul a:hover {
 }
 
 header {
+  height: 100vh;
+  overflow-y: hidden;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/header-image.jpg);
   background-size: cover;
   background-position: center;
